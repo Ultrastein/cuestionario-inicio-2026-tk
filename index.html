@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Desafío Tecno Bereshit 2026</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div id="screen-select">
+            <h1>¡Hola! 👋</h1>
+            <h2>Para empezar, elegí tu grado de este año:</h2>
+            <div class="btn-grid">
+                <button class="grade-btn" onclick="startGame(5)">5º Grado</button>
+                <button class="grade-btn" onclick="startGame(6)">6º Grado</button>
+                <button class="grade-btn" onclick="startGame(7)">7º Grado</button>
+            </div>
+        </div>
+
+        <div id="screen-quiz" class="hidden">
+            <div class="progress-container">
+                <div id="progress" class="progress-bar"></div>
+            </div>
+            <div id="question-text" class="question-text">...</div>
+            <div id="options-container" class="btn-grid"></div>
+        </div>
+
+        <div id="screen-result" class="hidden">
+            <div style="font-size: 5rem;">🏆</div>
+            <h1>¡Terminaste!</h1>
+            <p class="feedback-msg">Tu puntaje final es:</p>
+            <div id="final-score" class="score-display">0/0</div>
+            <div id="final-feedback" class="feedback-msg"></div>
+            <button onclick="location.reload()" style="background: var(--secondary); border: none; color: white; padding: 1rem 3rem;">Volver a Jugar</button>
+        </div>
+    </div>
+
+
+</body>
+</html>
