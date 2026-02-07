@@ -11,20 +11,30 @@
 <body>
 
     <div class="container">
-        <div id="screen-select">
-            <h1>Que recordamos del año pasado??</h1>
-            <h2>En que grado estas este 2026</h2>
-            <div class="btn-grid">
-                <button class="grade-btn" onclick="startGame(1)">1º Grado</button>
-                <button class="grade-btn" onclick="startGame(2)">2º Grado</button>
-                <button class="grade-btn" onclick="startGame(3)">3º Grado</button>
-                <button class="grade-btn" onclick="startGame(4)">4º Grado</button>
-                <button class="grade-btn" onclick="startGame(5)">5º Grado</button>
-                <button class="grade-btn" onclick="startGame(6)">6º Grado</button>
-                <button class="grade-btn" onclick="startGame(7)">7º Grado</button>
- 
-            </div>
+
+    <div id="screen-school">
+        <h1>Bienvenidos al 2026</h1>
+        <h2>Primero, elegí tu escuela:</h2>
+        <div class="btn-grid">
+            <button class="grade-btn" onclick="selectSchool('Bereshit')">Bereshit</button>
+            <button class="grade-btn" onclick="selectSchool('Hilel')">Hilel</button>
         </div>
+    </div>
+
+    <div id="screen-select" class="hidden">
+        <button class="back-btn" onclick="goBackToSchool()">⬅ Volver</button>
+        <h1>¿Qué recordamos del año pasado?</h1>
+        <h2>¿En qué grado estás este 2026?</h2>
+        <div class="btn-grid">
+            <button class="grade-btn" onclick="startGame(1)">1º Grado</button>
+            <button class="grade-btn" onclick="startGame(2)">2º Grado</button>
+            <button class="grade-btn" onclick="startGame(3)">3º Grado</button>
+            <button class="grade-btn" onclick="startGame(4)">4º Grado</button>
+            <button class="grade-btn" onclick="startGame(5)">5º Grado</button>
+            <button class="grade-btn" onclick="startGame(6)">6º Grado</button>
+            <button class="grade-btn" onclick="startGame(7)">7º Grado</button>
+        </div>
+    </div>
 
         <div id="screen-quiz" class="hidden">
             <div class="progress-container">
